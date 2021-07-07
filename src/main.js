@@ -7,11 +7,15 @@ import 'vuesax/dist/vuesax.css'; //Vuesax styles
 import 'material-icons/iconfont/material-icons.css';
 import router from './router';
 import './assets/css/main.css'
+import VueApexCharts from 'vue-apexcharts'
+
 
 Vue.use(
-  Vuesax, 
+  Vuesax,
   //option here
-)
+);
+Vue.use(VueApexCharts);
+Vue.component('apexchart', VueApexCharts);
 
 Vue.config.productionTip = false
 Vue.prototype.$http = Axios;

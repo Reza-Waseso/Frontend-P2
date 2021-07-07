@@ -19,7 +19,7 @@
             <div class="column" style="background-color:#aaa;">
                 <vs-card>
                     <template #text>
-                        <h3>Data Statistik</h3>
+                        <h3>Data Perkawinan</h3>
                         <vs-input type="date">
                         </vs-input>
                         <br>
@@ -30,7 +30,7 @@
             <div class="column" style="background-color:#aaa;">
                 <vs-card>
                     <template #text>
-                        <h3>Data Statistik</h3>
+                        <h3>Data Perceraian</h3>
                         <vs-input type="date">
                         </vs-input>
                         <br>
@@ -39,22 +39,37 @@
                 </vs-card>
             </div>
         </div>
-        
+        <div class="pieChart">
+            <pie-chart weight="500px" height="500px">
+            
+            </pie-chart>
+        </div>
     </div>
 </template>
 
 <script>
 import Sidebar from '@/components/Sidebar.vue'
 import Navbar from '@/components/Navbar.vue'
+import PieChart from '../components/PieChart.js'
 
 export default {
     name: "Dashboard",
     components: {
         Sidebar,
-        Navbar
-    }
+        Navbar,
+        PieChart
+    },
+    data(){
+        return {
+            datacollection: null,
+            loaded: false
+        }
+    },
+
 }
 </script>
+
+
 
 <style>
     .full-height {
@@ -97,6 +112,17 @@ export default {
         align-content: stretch;
         justify-content: center;
 
+}
+    .vs-card {
+        max-width: 420px;
+
+    }
+
+    .pieChart {
+        padding-top: 50px;
+        padding-left: 250px;
+        
 
 }
+
 </style>
