@@ -1,7 +1,7 @@
 <template>
     <div>
         <vs-navbar color="#7d33ff" text-white center-collapsed>
-            <h2>Selamat Datang Di<br>Aplikasi Perkawinan dan Perceraian</h2>
+            <h2>{{ msg }}</h2>
             <template #right>
                 <vs-input type="text" v-model="search" placeholder="Search"/>
                 <vs-button color="rgb(255,255,255)" flat>Search</vs-button>

@@ -7,13 +7,13 @@
         >
         <h1>Aplikasi P2</h1>
         <vs-sidebar-item id="Dashboard">
-            Dashboard
+            <router-link class="sidebar-link" to="/Dashboard">Dashboard</router-link>
         </vs-sidebar-item>
         <vs-sidebar-item id="Perkawinan">
-            Perkawinan
+            <router-link class="sidebar-link" to="/Perkawinan">Perkawinan</router-link>
         </vs-sidebar-item>
         <vs-sidebar-item id="Perceraian">
-            Perceraian
+            <router-link class="sidebar-link" to="/Perceraian">Perceraian</router-link>
         </vs-sidebar-item>
         <vs-sidebar-item id="Kontak">
             Kontak Kami

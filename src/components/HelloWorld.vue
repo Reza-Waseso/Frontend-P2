@@ -24,9 +24,8 @@
         <router-link class="sidebar-link" to="/Dashboard">LOGIN</router-link>
       </vs-sidebar-item>
       <br />
-      <a style="text-decoration: none" href="">
-        Don't have an account? Sign up here
-      </a>
+      <router-link class="sidebar-link" to="/Register">Don't have an account? Sign up here</router-link>
+      
       <template #footer> </template>
     </vs-sidebar>
     <h1>{{ msg }}</h1>

@@ -2,7 +2,7 @@
     <div class="full-height">
         <div>
             <Sidebar />
-            <Navbar />
+            <Navbar msg="Dashboard" />
         </div>
         <div class="row">
             <div class="column" style="background-color:#aaa;">
@@ -19,8 +19,8 @@
             <div class="column" style="background-color:#aaa;">
                 <vs-card>
                     <template #text>
-                        <h3>Data Perkawinan</h3>
-                        <vs-input type="date">
+                        <h3 style="padding-bottom: 5px;">Data Perkawinan</h3>
+                        <vs-input type="text">
                         </vs-input>
                         <br>
                         <h2>Total --</h2>
@@ -30,8 +30,8 @@
             <div class="column" style="background-color:#aaa;">
                 <vs-card>
                     <template #text>
-                        <h3>Data Perceraian</h3>
-                        <vs-input type="date">
+                        <h3 style="padding-bottom: 5px;">Data Perceraian</h3>
+                        <vs-input type="text">
                         </vs-input>
                         <br>
                         <h2>Total --</h2>

@@ -4,6 +4,9 @@ import VueRouter from 'vue-router'
 //import halaman
 import Home from '../views/Home.vue'
 import Dashboard from '../views/Dashboard.vue'
+import Perkawinan from '../views/Perkawinan.vue'
+import Perceraian from '../views/Perceraian.vue'
+import Register from '../views/Register.vue'
 
 Vue.use(VueRouter)
 
@@ -17,6 +20,22 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard
+  },
+  {
+    path: '/perkawinan',
+    name: 'Perkawinan',
+    component: Perkawinan
+  },
+  {
+    path: '/perceraian',
+    name: 'Perceraian',
+    component: Perceraian
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: Register
+
   },
   {
     path: '/about',
