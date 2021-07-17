@@ -13,9 +13,11 @@
     "chart.js": "^2.9.4",
     "core-js": "^3.6.5",
     "material-icons": "^0.7.4",
+    "print-js": "^1.6.0",
     "vue": "^2.6.11",
     "vue-apexcharts": "^1.6.1",
     "vue-chartjs": "^3.4.2",
+    "vue-pdf": "^4.3.0",
     "vue-router": "^3.5.2",
     "vuesax": "^4.0.1-alpha.25"
   },

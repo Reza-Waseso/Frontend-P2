@@ -7,6 +7,8 @@ import Dashboard from '../views/Dashboard.vue'
 import Perkawinan from '../views/Perkawinan.vue'
 import Perceraian from '../views/Perceraian.vue'
 import Register from '../views/Register.vue'
+import Kopsurat from '../views/Kopsurat.vue'
+import Kopperkawinan from '../views/Kopperkawinan.vue'
 
 Vue.use(VueRouter)
 
@@ -35,7 +37,16 @@ const routes = [
     path: '/register',
     name: 'Register',
     component: Register
-
+  },
+  {
+    path: '/kopsurat',
+    name: 'Kopsurat',
+    component: Kopsurat
+  },
+  {
+    path: '/kopperkawinan',
+    name: 'Kopperkawinan',
+    component: Kopperkawinan
   },
   {
     path: '/about',
